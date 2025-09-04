@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oslo Cargo Flight Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Oslo Cargo Flight Tracker</h1>
+      <p class="subtitle">
+        Monitor incoming and outgoing cargo flights at Oslo Gardermoen Airport
+        (<span class="iata-code">OSL</span>). The list below updates on
+        demand and only displays flights operated by select cargo airlines.
+      </p>
+      <button id="refreshBtn" class="refresh">Refresh flights</button>
+    </header>
+
+    <main>
+      <div id="table-container" class="table-wrapper">
+        <table id="flightsTable">
+          <thead>
+            <tr>
+              <th>Time (local)</th>
+              <th>Airline</th>
+              <th>Flight</th>
+              <th>Direction</th>
+              <th>Other airport</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dynamic flight rows will be injected here -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Data provided by
+        <a href="https://avinor.no/" target="_blank" rel="noopener noreferrer"
+          >Avinor</a
+        >. Times are shown in the Europe/Oslo time zone. The information is
+        refreshed when you click the button above.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
