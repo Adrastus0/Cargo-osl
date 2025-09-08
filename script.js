@@ -8,13 +8,13 @@
 
   const CARGO_CODES = [
     "UPS", "5X", "BCS", "ES", "QY", "D0",
-    "APF", "HP", "QAF", "Q7", "QR"
-  ];
-  const CARGO_KEYWORDS = [
+    "APF", "HP", "QAF", "Q7", "QR", "FX", "FDX", "EK", "UAE"
+  ]
+    ;
+  const  CARGO_KEYWORDS = [
     "cargo", "dhl", "ups", "amapola",
-    "qatar", "freight", "postal"
-  ];
-
+    "qatar", "freight", "postal", "fedex", "emirates"
+];
   const BASE_URL = "https://corsproxy.io/?https://asrv.avinor.no";
   const XML_FEED_URL = `${BASE_URL}/XmlFeed/v1.0`;
   const AIRLINE_NAMES_URL = `${BASE_URL}/airlineNames/v1.0`;
